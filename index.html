@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Редирект...</title>
+  <meta http-equiv="refresh" content="5;url=https://www.vodkazino.com">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+    }
+    a {
+      color: #0af;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Вы перенаправляетесь на новый сайт</h1>
+  <p>Если редирект не произошёл, нажмите <a href="https://www.vodkazino.com">здесь</a>.</p>
+
+  <script>
+    const target = "https://www.vodkazino.com";
+    if (window.location.hostname === "vodkacasino.store") {
+      window.location.href = target;
+    }
+  </script>
+</body>
+</html>
